@@ -26,9 +26,10 @@ function computerPlay() {
   function game() {
     
     for (let i = 0; i < 5; i++) {
-        const playerSelection = prompt("What is your choice?").toLowerCase();
+        let playerSelection = prompt("What is your choice?");
+        playerSelection = playerSelection.toLowerCase();
         const computerSelection = computerPlay();
-        playRound(playerSelection, computerSelection)
+        playRound(playerSelection, computerSelection);
      }
   }
   
